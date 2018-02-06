@@ -1,0 +1,53 @@
+{
+	"salons": [{
+			"title": "Sax & Fön",
+			"address": "Rådmansgatan 46",
+			"price": "320",
+			"postal": "113 57 Stockholm",
+			"openinghours": "Öppet till 19.00",
+			"phone": "08-522 389 20",
+			"website": "www.salongweb.se",
+      "text": "Lorem impsum.."
+		},
+    {
+			"title": "Hårizont",
+			"address": "Rådmansgatan 46",
+			"price": "320",
+			"postal": "113 57 Stockholm",
+			"openinghours": "Öppet till 19.00",
+			"phone": "08-522 389 20",
+			"website": "www.salongweb.se",
+      "text": "Lorem impsum.."
+  		},
+      {
+			"title": "Hårhuset",
+			"address": "Rådmansgatan 46",
+			"price": "320",
+			"postal": "113 57 Stockholm",
+			"openinghours": "Öppet till 19.00",
+			"phone": "08-522 389 20",
+			"website": "www.salongweb.se",
+      "text": "Lorem impsum.."
+		},
+    {
+			"title": "Hair & Nu",
+			"address": "Rådmansgatan 46",
+			"price": "320",
+			"postal": "113 57 Stockholm",
+			"openinghours": "Öppet till 19.00",
+			"phone": "08-522 389 20",
+			"website": "www.salongweb.se",
+      "text": "Lorem impsum.."
+  		},
+    {
+			"title": "Hårley Davidson",
+			"address": "Rådmansgatan 46",
+			"price": "320",
+			"postal": "113 57 Stockholm",
+			"openinghours": "Öppet till 19.00",
+			"phone": "08-522 389 20",
+			"website": "www.salongweb.se",
+      "text": "Lorem impsum.."
+  		}
+    ]
+  }
