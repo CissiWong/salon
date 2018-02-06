@@ -1,15 +1,25 @@
 import React from "react"
+import data from "./data.json"
+import Salon from "./salon.js"
 
-class App extends React.Component {
+// const data = require("./data.json")
+
+export default class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      salons: data.salons
+    }
+  }
 
   render() {
     return (
       <div>
-        Find me in src/app.js!
-      </div>
+        {this.state.salons.map((data) => {
+         return <Salon
+           title={data.title} />
+         })}
+        </div>
     )
   }
-
 }
-
-export default App
