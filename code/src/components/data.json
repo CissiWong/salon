@@ -1,5 +1,6 @@
 {
 	"salons": [{
+			"id": "saxofon",
 			"title": "Sax & Fön",
 			"address": "Rådmansgatan 46",
 			"price": "320",
@@ -10,6 +11,7 @@
       "text": "Lorem impsum.."
 		},
     {
+			"id": "hårizont",
 			"title": "Hårizont",
 			"address": "Rådmansgatan 46",
 			"price": "320",
@@ -20,6 +22,7 @@
       "text": "Lorem impsum.."
   		},
       {
+			"id": "harhuset",
 			"title": "Hårhuset",
 			"address": "Rådmansgatan 46",
 			"price": "320",
@@ -30,6 +33,7 @@
       "text": "Lorem impsum.."
 		},
     {
+			"id": "haironu",
 			"title": "Hair & Nu",
 			"address": "Rådmansgatan 46",
 			"price": "320",
@@ -40,6 +44,7 @@
       "text": "Lorem impsum.."
   	},
     {
+			"id": "harley",
 			"title": "Hårley Davidson",
 			"address": "Rådmansgatan 46",
 			"price": "320",

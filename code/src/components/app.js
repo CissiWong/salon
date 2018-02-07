@@ -1,25 +1,18 @@
 import React from "react"
-import data from "./data.json"
-import Salon from "./salon.js"
-
-// const data = require("./data.json")
+import { BrowserRouter, Route } from "react-router-dom"
+import ListView from "./listview.js"
+import SalonView from "./salonview.js"
 
 export default class App extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      salons: data.salons
-    }
-  }
 
   render() {
     return (
-      <div>
-        {this.state.salons.map((data) => {
-         return <Salon
-           title={data.title} />
-         })}
+      <BrowserRouter>
+        <div>
+          <Route path="/" exact component={ListView} />
+          <Route path="/salon/:id" component={SalonView} />
         </div>
+      </BrowserRouter>
     )
   }
 }
