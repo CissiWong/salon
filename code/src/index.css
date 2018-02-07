@@ -1,10 +1,130 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+@font-face {
+  font-family: 'miller-banner', serif;
+  src: url('./fonts/miller-banner-light.otf'); /* IE9 Compat Modes */
 }
 
-.listview-container {
-  height: 500px;
-  width: auto;
+body {
+  margin: auto;
+  padding: 0;
+  font-family: 'miller-banner', serif;
+  font-style: normal;
+  font-weight: 300;
+  max-width: 375px;
+}
+
+p, h2 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 17px;
+}
+
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+nav h2 {
+  font-weight: 100;
+  padding: 16px 65px 17px 65px;
+}
+
+.salonview-line {
+  height: 2px;
+  margin: 0 0 10px 0;;
+  padding: 0;
+}
+
+.salonview {
+  margin: auto;
+  position: relative;
+}
+
+.statusbar {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  margin: auto;
+}
+.left {
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  left: 10px;
+  height: 25px;
+  width: 25px;
+}
+.heart {
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  left: 330px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 32px;
+  position: absolute;
+  top: 180px;
+  left: 10px;
+  margin: 0;
+}
+
+.rating {
+  position: absolute;
+  top: 220px;
+  left: 10px;
+}
+
+.rating p {
+  color: #fff;
+  float: right;
+  margin: 0 0 0 5px;
+}
+
+.salonview-address {
+  display: flex;
+  margin: 10px 0 10px 0;
+}
+
+.salonview-time {
+  display: flex;
+  margin: 20px 0;
+}
+
+.salonview-phone {
+  display: flex;
+  margin: 20px 0;
+}
+
+.salonview-web  {
+  display: flex;
+  margin: 20px 0;
+}
+
+.salonview-address img {
+  width: 10px;
+  height: 15px;
+  margin-right: 20px;
+}
+
+.salonview-time img {
+  width: 10px;
+  height: 15px;
+  margin-right: 20px;
+}
+
+.salonview-phone img {
+  width: 10px;
+  height: 15px;
+  margin-right: 20px;
+}
+
+.salonview-web img {
+  width: 10px;
+  height: 15px;
+  margin-right: 20px;
 }
