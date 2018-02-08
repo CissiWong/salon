@@ -12,12 +12,16 @@ body {
   max-width: 375px;
 }
 
+p {
+  font-size: 18px;
+}
+
 p, h2 {
   margin: 0;
 }
 
 h2 {
-  font-size: 17px;
+  font-size: 21px;
 }
 
 
@@ -54,9 +58,13 @@ nav h2 {
   z-index: 1;
   top: 30px;
   left: 10px;
+}
+
+.left img {
   height: 25px;
   width: 25px;
 }
+
 .heart {
   position: absolute;
   z-index: 1;
@@ -69,14 +77,14 @@ h1 {
   font-size: 32px;
   position: absolute;
   top: 180px;
-  left: 10px;
+  left: 20px;
   margin: 0;
 }
 
 .rating {
   position: absolute;
   top: 220px;
-  left: 10px;
+  left: 20px;
 }
 
 .rating p {
@@ -107,24 +115,30 @@ h1 {
 
 .salonview-address img {
   width: 10px;
+  height: 16px;
+  margin-right: 20px;
+}
+
+.salonview-time .location {
+  width: 10px;
   height: 15px;
   margin-right: 20px;
 }
 
-.salonview-time img {
-  width: 10px;
-  height: 15px;
-  margin-right: 20px;
+.salonview-time .down {
+  height: 6px;
+  width: 13px;
+  margin: 6px 0 0 20px;
 }
 
 .salonview-phone img {
-  width: 10px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   margin-right: 20px;
 }
 
 .salonview-web img {
-  width: 10px;
+  width: 15px;
   height: 15px;
   margin-right: 20px;
 }
