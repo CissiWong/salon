@@ -46,7 +46,7 @@ export default class ListView extends React.Component {
           </div>
           <img src={goldline} alt="" />
         </header>
-        {this.state.listView.map(salon => {
+        {listView.map(salon => {
           return <SalonPreview
             key={salon.id}
             url={salon.id}
