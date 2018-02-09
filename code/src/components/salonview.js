@@ -18,8 +18,7 @@ export default class SalonView extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      salon: {},
-      home: false
+      salon: {}
     }
   }
 
@@ -36,8 +35,6 @@ export default class SalonView extends React.Component {
     })
   }
 
-
-
   render() {
     return (
       <div className="salonview">
@@ -48,7 +45,9 @@ export default class SalonView extends React.Component {
             <Link to="/"><img src={left} alt="" /></Link>
           </div>
           <img className="heart" src={heart} alt="" />
-          <h1>{this.state.salon.title}</h1>
+          <div className="salonview-title">
+            <h1>{this.state.salon.title}</h1>
+          </div>
           <div className="rating">
             <img src={star} alt="" />
             <img src={star} alt="" />

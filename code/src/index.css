@@ -1,3 +1,9 @@
+// General styles //
+
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: 'miller-banner', serif;
   src: url('./fonts/miller-banner-light.otf'); /* IE9 Compat Modes */
@@ -24,6 +30,10 @@ h2 {
   font-size: 21px;
 }
 
+h1 {
+  font-size: 32px;
+}
+
 
 nav {
   display: flex;
@@ -36,6 +46,34 @@ nav h2 {
   padding: 16px 65px 17px 65px;
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+// ListView styles //
+
+.listview-header {
+  height: 50px;
+  width: 100%;
+}
+
+.listview-category {
+  padding: 20px;
+}
+
+// SalonPreview styles //
+
+.preview-title {
+  color: #000;
+}
+
+.preview-container {
+  display: flex;
+}
+
+// SalonView styles //
+
 .salonview-line {
   height: 2px;
   margin: 0 0 10px 0;;
@@ -45,6 +83,14 @@ nav h2 {
 .salonview {
   margin: auto;
   position: relative;
+}
+
+.salonview-title {
+  position: absolute;
+  top: 160px;
+  left: 20px;
+  margin: 0;
+  color: #fff;
 }
 
 .statusbar {
@@ -70,15 +116,6 @@ nav h2 {
   z-index: 1;
   top: 30px;
   left: 330px;
-}
-
-h1 {
-  color: #fff;
-  font-size: 32px;
-  position: absolute;
-  top: 180px;
-  left: 20px;
-  margin: 0;
 }
 
 .rating {
