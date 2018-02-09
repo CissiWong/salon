@@ -34,12 +34,12 @@ export default class ListView extends React.Component {
     return (
       <div>
         <header className="listview-header">
-            <img
-              className="listview-back"
-              src={goldleft} alt="" />
           <img
-            className="listview-line"
-            src={goldline} alt="" />
+            className="listview-back"
+            src={goldleft}
+            alt="" />
+          <h2 className="listview-title">Hår</h2>
+          <div className="listview-back" />
           <div className="listview-category">
             <select
               className="category"

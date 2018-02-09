@@ -22,7 +22,7 @@ p {
   font-size: 18px;
 }
 
-p, h2 {
+p, h2, h3 {
   margin: 0;
 }
 
@@ -63,7 +63,13 @@ a {
 }
 
 .listview-back {
-  padding: 20px 0 50px 0;
+  padding: 20px 0 0 0;
+}
+
+.listview-title {
+  display: inline-block;
+  font-weight: lighter;
+  padding-left: 40%;
 }
 
 .listview-line {
@@ -76,15 +82,19 @@ a {
   position: absolute;
   left: 70%;
   cursor: pointer;
-  padding: 10px 0 10px 0;
+  padding: 20px 0 20px 0;
 }
 
 .listview-category select {
   font-family: 'miller-banner', serif;
   font-size: 18px;
-  padding: 10px 0 10px 0;
+  padding: 20px 0 20px 10px;
   width: 100%;
-  border: none;
+  border-top: 2px solid #B69F58;
+  border-bottom: 1px solid #B69F58;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
   box-shadow: none;
   background: transparent;
   background-image: none;
@@ -92,6 +102,7 @@ a {
   -moz-appearance: none;
   appearance: none;
 }
+
 .listview-header {
   height: auto;
   width: 100%;
@@ -102,11 +113,72 @@ a {
 
 .preview-title {
   color: #000;
+  font-size: 20px;
+  padding: 0 20px 0 20px;
 }
 
 .preview-container {
+  margin: 30px 0 20px 0;
   display: flex;
 }
+
+.preview-time {
+  float: left;
+  font-weight: bold;
+}
+
+.preview-rating {
+  flex-direction: row;
+  margin: 2px 0 2px 0;
+}
+
+.preview-rating p {
+  display: inline;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.preview-middle {
+  margin-left: 10%;
+}
+
+.preview-middle h3:first-child {
+  margin-bottom: 10px;
+}
+
+.preview-middle p {
+  margin-top: 10px;
+}
+
+.preview-right {
+  margin-left: 25%;
+  align-self: flex-start;
+  justify-content: flex-end;
+}
+
+.preview-right p:first-child {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.preview-right p:nth-child(2) {
+  font-size: 14px;
+}
+
+.preview-right p:nth-child(3) {
+  float: right;
+}
+
+.preview-arrow-right {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.preview-img-column {
+  margin: 20px 0 0 10px;
+}
+
 
 // SalonView styles //
 
