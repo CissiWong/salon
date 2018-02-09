@@ -30,14 +30,16 @@ export default class SalonPreview extends React.Component {
           </div>
           <div className="preview-right">
             <p>{this.props.price} kr</p>
-              <p>30 min</p>
+            <p>30 min</p>
           </div>
-          <div className="preview-img-column">
-            <img
-              className="preview-arrow-right"
-              src={right}
-              alt="" />
-          </div>
+          <Link to={`/salon/${this.props.url}`}>
+            <div className="preview-img-column">
+              <img
+                className="preview-arrow-right"
+                src={right}
+                alt="" />
+            </div>
+          </Link>
         </main>
       </div>
     )

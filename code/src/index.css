@@ -80,7 +80,7 @@ a {
   content: url("./assets/down.png");
   float: right;
   position: absolute;
-  left: 70%;
+  left: 60%;
   cursor: pointer;
   padding: 20px 0 20px 0;
 }
@@ -151,14 +151,14 @@ a {
 }
 
 .preview-right {
-  margin-left: 25%;
+  margin-left: 20%;
   align-self: flex-start;
   justify-content: flex-end;
 }
 
 .preview-right p:first-child {
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .preview-right p:nth-child(2) {
