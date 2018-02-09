@@ -86,6 +86,7 @@ a {
 }
 
 .listview-category select {
+  cursor: pointer;
   font-family: 'miller-banner', serif;
   font-size: 18px;
   padding: 20px 0 20px 10px;
@@ -104,6 +105,7 @@ a {
 }
 
 .listview-header {
+  margin-top: 40px;
   height: auto;
   width: 100%;
 }
@@ -154,6 +156,7 @@ a {
   margin-left: 20%;
   align-self: flex-start;
   justify-content: flex-end;
+  cursor: pointer;
 }
 
 .preview-right p:first-child {
@@ -177,6 +180,7 @@ a {
 }
 .preview-img-column {
   margin: 20px 0 0 10px;
+  cursor: pointer;
 }
 
 
@@ -191,6 +195,7 @@ a {
 .salonview {
   margin: auto;
   position: relative;
+  margin: 40px 0 40px 0;
 }
 
 .salonview-title {
@@ -280,6 +285,10 @@ a {
   width: 14px;
   height: 14px;
   margin-right: 20px;
+}
+
+.salonview-web {
+  cursor: pointer;
 }
 
 .salonview-web img {

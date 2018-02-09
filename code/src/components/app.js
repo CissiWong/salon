@@ -8,7 +8,7 @@ export default class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
+        <div className="listview">
           <Route path="/" exact component={ListView} />
           <Route path="/salon/:id" component={SalonView} />
         </div>
