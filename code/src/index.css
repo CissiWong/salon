@@ -197,7 +197,10 @@ a {
 .salonview {
   margin: auto;
   position: relative;
-  margin: 40px 0 40px 0;
+}
+
+.salonview-text {
+  margin: 10px 10px 20px 20px;
 }
 
 .salonview-title {
@@ -214,6 +217,7 @@ a {
   top: 10px;
   margin: auto;
 }
+
 .left {
   position: absolute;
   z-index: 1;
@@ -247,22 +251,22 @@ a {
 
 .salonview-address {
   display: flex;
-  margin: 10px 0 10px 0;
+  margin: 20px 0 10px 20px;
 }
 
 .salonview-time {
   display: flex;
-  margin: 20px 0;
+  margin: 20px 0 0 20px;
 }
 
 .salonview-phone {
   display: flex;
-  margin: 20px 0;
+  margin: 20px 0 0 20px;
 }
 
 .salonview-web  {
   display: flex;
-  margin: 20px 0;
+  margin: 20px 0 20px 20px;
 }
 
 .salonview-address img {
@@ -291,6 +295,7 @@ a {
 
 .salonview-web {
   cursor: pointer;
+
 }
 
 .salonview-web img {

@@ -80,7 +80,9 @@ export default class SalonView extends React.Component {
             <img src={web} alt="" />
             <p>{this.state.salon.website}</p>
           </div>
+          <div className="salonview-text">
           <p>{this.state.salon.text}</p>
+          </div>
         </div>
       </div>
     )
