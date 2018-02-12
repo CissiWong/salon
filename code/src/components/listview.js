@@ -53,7 +53,6 @@ export default class ListView extends React.Component {
               <option className="category" value="">Visa alla</option>
             </select>
           </div>
-          <img src={goldline} alt="" />
         </header>
         {listView.map(salon => {
           return <SalonPreview

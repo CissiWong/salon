@@ -53,8 +53,9 @@ a {
 
 // ListView styles //
 
+
 .listview-category {
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   width: 120px;
   border-radius: 3px;
   overflow: hidden;
@@ -63,7 +64,7 @@ a {
 }
 
 .listview-back {
-  padding: 20px 0 0 0;
+  padding: 20px 0 0 10px;
 }
 
 .listview-title {
@@ -80,7 +81,7 @@ a {
   content: url("./assets/down.png");
   float: right;
   position: absolute;
-  left: 60%;
+  left: 70%;
   cursor: pointer;
   padding: 20px 0 20px 0;
 }
@@ -96,6 +97,7 @@ a {
   border-left: none;
   border-right: none;
   border-radius: 0;
+  /* border: none; */
   box-shadow: none;
   background: transparent;
   background-image: none;
@@ -105,7 +107,7 @@ a {
 }
 
 .listview-header {
-  margin-top: 40px;
+  padding: 10px 0 0 0;
   height: auto;
   width: 100%;
 }
@@ -120,7 +122,7 @@ a {
 }
 
 .preview-container {
-  margin: 30px 0 20px 0;
+  margin: 30px 0 20px 10px;
   display: flex;
 }
 
@@ -295,4 +297,14 @@ a {
   width: 15px;
   height: 15px;
   margin-right: 20px;
+}
+
+@media (max-width: 620px) {
+  body {
+    max-width: 100%;
+  }
+  .listview-category:after {
+    left: 85%;
+  }
+
 }
