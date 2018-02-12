@@ -1,12 +1,8 @@
 import React from "react"
 import SalonPreview from "./salonpreview.js"
 import goldleft from "../assets/gold-left.png"
-import wideline from "../assets/line-wide.png"
-import goldline from "../assets/gold-line.png"
 import down from "../assets/down.png"
 import data from "./data.json"
-
-// const data = require("./data.json")
 
 export default class ListView extends React.Component {
   constructor(props) {

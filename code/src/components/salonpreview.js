@@ -4,8 +4,6 @@ import star from "../assets/star.png"
 import staroutline from "../assets/star-outline.png"
 import right from "../assets/right.png"
 
-const data = require("./data.json")
-
 export default class SalonPreview extends React.Component {
   render() {
     return (

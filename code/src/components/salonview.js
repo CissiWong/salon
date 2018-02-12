@@ -81,7 +81,7 @@ export default class SalonView extends React.Component {
             <p>{this.state.salon.website}</p>
           </div>
           <div className="salonview-text">
-          <p>{this.state.salon.text}</p>
+            <p>{this.state.salon.text}</p>
           </div>
         </div>
       </div>
