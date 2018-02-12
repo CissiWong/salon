@@ -81,7 +81,7 @@ a {
   content: url("./assets/down.png");
   float: right;
   position: absolute;
-  left: 70%;
+  left: 61%;
   cursor: pointer;
   padding: 20px 0 20px 0;
 }
@@ -97,7 +97,6 @@ a {
   border-left: none;
   border-right: none;
   border-radius: 0;
-  /* border: none; */
   box-shadow: none;
   background: transparent;
   background-image: none;
