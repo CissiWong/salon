@@ -1,4 +1,4 @@
-// General styles //
+/* General styles */
 
 * {
   box-sizing: border-box;
@@ -51,7 +51,7 @@ a {
   text-decoration: none;
 }
 
-// ListView styles //
+/* ListView styles */
 
 
 .listview-category {
@@ -112,12 +112,12 @@ a {
 }
 
 
-// SalonPreview styles //
+/* SalonPreview styles */
 
 .preview-title {
   color: #000;
   font-size: 20px;
-  padding: 0 20px 0 20px;
+  padding: 0;
 }
 
 .preview-container {
@@ -185,11 +185,11 @@ a {
 }
 
 
-// SalonView styles //
+/* SalonView styles */
 
 .salonview-line {
   height: 2px;
-  margin: 0 0 10px 0;;
+  margin: 0 0 10px 0;
   padding: 0;
 }
 

@@ -1,14 +1,16 @@
-import React from "react"
-import SalonPreview from "./salonpreview.js"
+import React, { Fragment } from "react"
+import SalonPreview from "../components/salonpreview.js"
 import goldleft from "../assets/gold-left.png"
 import down from "../assets/down.png"
-import data from "./data.json"
+
+// Data dummy
+import { salons as dataSalons } from '../data/salons.json';
 
 export default class ListView extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      listView: data.salons,
+      listView: dataSalons,
       category: ""
     }
   }
@@ -28,7 +30,7 @@ export default class ListView extends React.Component {
       ))
     }
     return (
-      <div>
+      <Fragment>
         <header className="listview-header">
           <img
             className="listview-back"
@@ -50,6 +52,7 @@ export default class ListView extends React.Component {
             </select>
           </div>
         </header>
+        <main className={'salon-list'}>
         {listView.map(salon => {
           return <SalonPreview
             key={salon.id}
@@ -59,7 +62,8 @@ export default class ListView extends React.Component {
             price={salon.price}
             category={salon.category} />
         })}
-      </div>
+        </main>
+      </Fragment>
     )
   }
 }

@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
+
+// Assets
 import header from "../assets/header_img.png"
 import statusbar from "../assets/status_bar.png"
 import heart from "../assets/heart.png"
@@ -12,30 +14,34 @@ import web from "../assets/web.png"
 import line from "../assets/line.png"
 import down from "../assets/down.png"
 
-const data = require("./data.json")
+// Data dummy
+import { salons as dataSalons } from '../data/salons.json';
 
 export default class SalonView extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      salon: {}
+
+  // Don't update (rerender) the component if the params are the same as before
+  // @see https://reactjs.org/docs/react-component.html#shouldcomponentupdate
+  shouldComponentUpdate( nextProps, nextState ) {
+
+    if ( nextProps.match.params.id === this.props.match.params.id ) {
+      return false;
     }
-  }
 
-  componentDidMount() {
-    console.log(data)
-    const salon = data.salons.find(p => (p.id === this.props.match.params.id))
+    return true;
 
-    this.setSalon(salon)
-  }
-
-  setSalon = salon => {
-    this.setState({
-      salon
-    })
   }
 
   render() {
+
+    // Find the salon (fallbacks to undefined if not found)
+    const salon = dataSalons.find(sal => sal.id === this.props.match.params.id);
+
+    // Return null if the .find returns undefined.
+    // Should in reality be a "sorry something went wrong" screen.
+    if ( !salon ) {
+      return null;
+    }
+
     return (
       <div className="salonview">
         <header className="salonview-header">
@@ -46,7 +52,7 @@ export default class SalonView extends React.Component {
           </div>
           <img className="heart" src={heart} alt="" />
           <div className="salonview-title">
-            <h1>{this.state.salon.title}</h1>
+            <h1>{salon.title}</h1>
           </div>
           <div className="rating">
             <img src={star} alt="" />
@@ -65,23 +71,23 @@ export default class SalonView extends React.Component {
         <div className="salonview-container">
           <div className="salonview-address">
             <img src={location} alt="" />
-            <p>{this.state.salon.address}, {this.state.salon.postal}</p>
+            <p>{salon.address}, {salon.postal}</p>
           </div>
           <div className="salonview-time">
             <img className="location" src={location} alt="" />
-            <p>{this.state.salon.openinghours}</p>
+            <p>{salon.openinghours}</p>
             <img className="down" src={down} alt="" />
           </div>
           <div className="salonview-phone">
             <img src={phone} alt="" />
-            <p>{this.state.salon.phone}</p>
+            <p>{salon.phone}</p>
           </div>
           <div className="salonview-web">
             <img src={web} alt="" />
-            <p>{this.state.salon.website}</p>
+            <p>{salon.website}</p>
           </div>
           <div className="salonview-text">
-            <p>{this.state.salon.text}</p>
+            <p>{salon.text}</p>
           </div>
         </div>
       </div>
