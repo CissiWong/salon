@@ -1,0 +1,35 @@
+.custom-select {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-select:after {
+  content: url("../../assets/down.png");
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.custom-select select {
+  cursor: pointer;
+  font-family: 'miller-banner', serif;
+  font-size: 18px;
+  padding: 20px 0 20px 10px;
+  width: 100%;
+  border-top: 1px solid #B69F58;
+  border-bottom: 1px solid #B69F58;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  appearance: none;
+}
+
+.custom-select select:focus {
+  outline: none;
+}

@@ -1,0 +1,26 @@
+.navbar {
+  height: 4rem;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar-back {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.navbar-secondary {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.navbar-title {
+  line-height: 4rem;
+}

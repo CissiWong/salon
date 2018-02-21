@@ -1,0 +1,54 @@
+/* General styles */
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'miller-banner', serif;
+  src: url('./fonts/miller-banner-light.otf'); /* IE9 Compat Modes */
+}
+
+body {
+  margin: auto;
+  padding: 0;
+  font-family: 'miller-banner', serif;
+  font-style: normal;
+  font-weight: 300;
+  max-width: 375px;
+}
+
+p {
+  font-size: 18px;
+}
+
+p, h2, h3 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+
+@media (max-width: 620px) {
+  body {
+    max-width: 100%;
+  }
+  .listview-category:after {
+    left: 85%;
+  }
+}
