@@ -1,10 +1,16 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import star from "../assets/star.png"
-import staroutline from "../assets/star-outline.png"
-import right from "../assets/right.png"
 
-export default class SalonPreview extends React.Component {
+// Components
+import Rating from '../Rating/Rating';
+
+// Assets
+import right from "../../assets/right.png"
+
+// Styling
+import './salon-preview.css';
+
+class SalonPreview extends React.Component {
   render() {
     return (
       <div className="preview-container">
@@ -14,14 +20,7 @@ export default class SalonPreview extends React.Component {
         <div className="preview-middle">
           <Link to={`/salon/${this.props.url}`}>
             <h3 className="preview-title">{this.props.title}</h3>
-            <span className="preview-rating">
-              <img src={star} alt="" />
-              <img src={star} alt="" />
-              <img src={star} alt="" />
-              <img src={star} alt="" />
-              <img src={staroutline} alt="" />
-              <p>(32)</p>
-            </span>
+            <Rating rating={this.props.stars} votes={32} />
             <p>{this.props.address}</p>
           </Link>
         </div>
@@ -41,3 +40,5 @@ export default class SalonPreview extends React.Component {
     )
   }
 }
+
+export default SalonPreview;

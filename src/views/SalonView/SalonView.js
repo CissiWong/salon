@@ -1,33 +1,41 @@
-import React from "react"
-import { Link } from "react-router-dom"
+import React from "react";
+import PropTypes from 'prop-types';
+
+// Components
+import NavigationBar from '../../components/NavigationBar/NavigationBar';
+import Rating from '../../components/Rating/Rating';
 
 // Assets
-import header from "../assets/header_img.png"
-import statusbar from "../assets/status_bar.png"
-import heart from "../assets/heart.png"
-import left from "../assets/left.png"
-import phone from "../assets/phone.png"
-import star from "../assets/star.png"
-import staroutline from "../assets/star-outline.png"
-import location from "../assets/location.png"
-import web from "../assets/web.png"
-import line from "../assets/line.png"
-import down from "../assets/down.png"
+import header from "../../assets/header_img.png"
+import phone from "../../assets/phone.png"
+import location from "../../assets/location.png"
+import web from "../../assets/web.png"
+import line from "../../assets/line.png"
+import down from "../../assets/down.png"
 
 // Data dummy
-import { salons as dataSalons } from '../data/salons.json';
+import { salons as dataSalons } from '../../data/salons.json';
 
-export default class SalonView extends React.Component {
+// Styling
+import './salon-view.css';
 
-  // Don't update (rerender) the component if the params are the same as before
-  // @see https://reactjs.org/docs/react-component.html#shouldcomponentupdate
-  shouldComponentUpdate( nextProps, nextState ) {
+class SalonView extends React.Component {
 
+  // Hinder the component from updating if the id are the same
+  shouldComponentUpdate(nextProps, nextState) {
     if ( nextProps.match.params.id === this.props.match.params.id ) {
       return false;
     }
-
     return true;
+  }
+
+  handleOnNavBack = event => {
+
+    event.preventDefault();
+
+    // Use the history prop with the push function we get access to by using React Router
+    // to redirect the user back to the list view
+    this.props.history.push('/');
 
   }
 
@@ -44,26 +52,15 @@ export default class SalonView extends React.Component {
 
     return (
       <div className="salonview">
+        <NavigationBar displayBackButton={true} displayHeart={true} onBack={this.handleOnNavBack} />
         <header className="salonview-header">
-          <img className="statusbar" src={statusbar} alt="" />
           <img className="header_img" src={header} alt="" />
-          <div className="left">
-            <Link to="/"><img src={left} alt="" /></Link>
-          </div>
-          <img className="heart" src={heart} alt="" />
-          <div className="salonview-title">
-            <h1>{salon.title}</h1>
-          </div>
-          <div className="rating">
-            <img src={star} alt="" />
-            <img src={star} alt="" />
-            <img src={star} alt="" />
-            <img src={star} alt="" />
-            <img src={staroutline} alt="" />
-            <p>(32)</p>
+          <div className={'salonview-header__container'}>
+            <h1 className="salonview-title">{salon.title}</h1>
+            <Rating rating={salon.stars} votes={32} />
           </div>
         </header>
-        <nav>
+        <nav className={'salonview-tabs'}>
           <h2>Info</h2>
           <h2>Schema</h2>
         </nav>
@@ -94,3 +91,12 @@ export default class SalonView extends React.Component {
     )
   }
 }
+
+// These propTypes are inherited from the React Router component <Route />
+SalonView.propTypes = {
+  match: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
+  history: PropTypes.object.isRequired
+};
+
+export default SalonView;

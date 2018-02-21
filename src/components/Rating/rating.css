@@ -1,0 +1,18 @@
+.rating {
+  display: flex;
+  flex-direction: row;
+}
+
+.rating-stars {
+  display: flex;
+  flex-direction: row;
+}
+
+.rating-star:not(:last-child) {
+  margin-right: 1px;
+}
+
+.rating-votes {
+  margin-left: 0.5rem;
+  font-size: 13px;
+}

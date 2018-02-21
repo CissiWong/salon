@@ -1,9 +1,9 @@
-import React from "react"
-import { BrowserRouter, Route } from "react-router-dom"
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // Components
 import ListView from "../views/listView";
-import SalonView from "../views/salonView"
+import SalonView from "../views/SalonView/SalonView";
 
 export default class App extends React.Component {
 
@@ -11,8 +11,10 @@ export default class App extends React.Component {
     return (
       <BrowserRouter>
         <div className="container">
-          <Route path="/" exact component={ListView} />
-          <Route path="/salon/:id" component={SalonView} />
+          <Switch>
+            <Route path="/" exact component={ListView} />
+            <Route path="/salon/:id" exact component={SalonView} />
+          </Switch>
         </div>
       </BrowserRouter>
     )
