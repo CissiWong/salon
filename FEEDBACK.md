@@ -19,6 +19,11 @@ En bra egenskap du har är att rita upp appen, dess flöde och dess komponenter.
 
 PropTypes är ett sätt att under utvecklingsfasen upptäcka eller försäkra sig om att typen av datan som rör sig in i en komponent är den typen som komponenten förväntar sig. PropTypes gör underverk för att förhindra vanliga buggar. Exempelvis komponent A förväntade sig att en prop ska vara en sträng men istället av någon outgrundlig anledning kom det en siffra vilket crashade komponenten. Med PropTypes får du en varning om det inträffade och kan ta tag i det innan buggen når produktion. Använd alltid PropTypes när en komponent använder props. En annan fördel är också att PropTypes förtydligar för andra hur den ska användas och vad den kan tänkas användas till.
 
+### Added readme file
+- Added a readme file with instructions
+
+Det är alltid bra att inkludera en readme fil där du förklarar hur man installerar/bidrar/utvecklar eller förser andra utvecklare med nödvändig information.
+
 ## Vidare forskning och utvecklings
 
 Vad du kan göra eller lära dig härnäst är:
